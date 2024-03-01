@@ -1,0 +1,12 @@
+.simbolo {
+    width: 2em;
+    height: auto;
+    rotate: 0deg;
+    animation: girar 2s infinite;
+    transition: ease-in-out;
+}
+
+@keyframes girar {
+    0% {rotate: 0deg}
+    100%{rotate: 360deg;}
+}
