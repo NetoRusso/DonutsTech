@@ -1,0 +1,89 @@
+@import url(../index.css);
+
+.containner {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("./imgBanner01_DT.jpg") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    mask-image: url('./mascara2.svg');
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    position: relative;
+    
+}
+
+.containner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--cor-escura);
+    mix-blend-mode: color; 
+}
+
+.conteudo {
+    width: 100vw;
+    height: 60%;
+    margin-top: 2em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    max-width: 12em;
+    /* width: 60%; */
+    height: auto;
+}
+
+.chamada {
+    margin-top: 1.3em;
+    color: var(--cor-clara);
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    padding: 0 32px;
+    font-weight: 700;
+}
+
+.destaque1 {
+    color: var(--cor-destaque4);
+}
+
+.destaque2 {
+    color: var(--cor-destaque3);
+}
+
+.chamada::selection{
+    background-color: var(--cor-destaque1);
+}
+
+.botao {
+    padding: 1em;
+    border-radius: 2em;
+    border: solid 0.3em var(--cor-clara);
+    background-color: var(--cor-destaque1);
+    font-family: var(--fonte-padrao);
+    font-weight: 700;
+    color: var(--cor-clara);
+    font-size: 0.8em;
+    box-shadow: 0.2em 0.2em 0.5em rgba(252, 235, 182, 0.8);
+}
+
+.botao:hover {
+    cursor: pointer;
+    scale: 0.8;
+    transition: 300ms;
+    box-shadow: none;
+    border: solid 0.3em var(--cor-destaque1);
+    background-color: var(--cor-clara);
+    color: var(--cor-destaque1);
+
+}

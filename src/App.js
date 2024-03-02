@@ -1,13 +1,12 @@
-import logo from './logo.svg';
+import './reset.css'
 import './App.css';
-import Donuts from './donuts';
+import Banner from './Banner';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Hello world!</h1>
-        <Donuts/>
+      <Banner />
       </header>
     </div>
   );
