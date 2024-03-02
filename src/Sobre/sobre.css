@@ -1,0 +1,25 @@
+.conteudoTotal {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo {
+    margin-top: 5em;
+    width: 60%;
+    height: auto;
+    color: var(--cor-escura);
+    font-family: var(--fonte-padrao);
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.paragrafo {
+    width: 80%;
+    margin-top: 1em;
+    font-family: var(--fonte-padrao);
+    color: var(--cor-escura);
+    font-size: 1em;
+}

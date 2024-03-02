@@ -1,8 +1,13 @@
 @import url(../index.css);
 
-.containner {
+.banner{
     width: 100vw;
     height: 100vh;
+    position: relative;
+}
+.containner {
+    width: 100%;
+    height: 115%;
     background-image: url("./imgBanner01_DT.jpg") ;
     background-size: cover;
     background-repeat: no-repeat;
@@ -10,7 +15,7 @@
     mask-image: url('./mascara2.svg');
     mask-repeat: no-repeat;
     mask-size: cover;
-    position: relative;
+    position: absolute;
     
 }
 
@@ -26,7 +31,7 @@
 }
 
 .conteudo {
-    width: 100vw;
+    width: 100%;
     height: 60%;
     margin-top: 2em;
     position: absolute;
@@ -42,6 +47,7 @@
     max-width: 12em;
     /* width: 60%; */
     height: auto;
+    filter: drop-shadow(0px 0px 20px rgba(252, 235, 182, 0.3));
 }
 
 .chamada {
@@ -67,7 +73,7 @@
 
 .botao {
     text-decoration: none;
-    padding: 1em;
+    padding: 1.3em;
     border-radius: 2em;
     border: solid 0.3em var(--cor-clara);
     background-color: var(--cor-destaque1);
@@ -76,6 +82,7 @@
     color: var(--cor-clara);
     font-size: 0.8em;
     box-shadow: 0.2em 0.2em 0.5em rgba(252, 235, 182, 0.8);
+    text-align: center;
 }
 
 .botao:hover {
@@ -86,5 +93,6 @@
     border: solid 0.3em var(--cor-destaque1);
     background-color: var(--cor-clara);
     color: var(--cor-destaque1);
+   
 
 }
