@@ -66,6 +66,7 @@
 }
 
 .botao {
+    text-decoration: none;
     padding: 1em;
     border-radius: 2em;
     border: solid 0.3em var(--cor-clara);
