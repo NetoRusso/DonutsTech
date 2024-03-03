@@ -1,6 +1,7 @@
 import './banner.css';
 import logo from './logoDTH.svg';
-import Donuts from'../donuts';
+import Donuts from '../donuts';
+import logoClara from './LogoDtClara.svg';
 
 function Banner() {
     return(
@@ -8,7 +9,7 @@ function Banner() {
             <div className='containner' />
             <div className='conteudo'>
                 <div>
-                <img className='logo' src={logo} alt='logo da donuts tech' />
+                <img className='logo' src={logoClara} alt='logo da donuts tech' />
                     <div className='textos'>
                         <h2 className='chamada'>O<span className='destaque1'> Marketing</span> que dá água na boca e <br/>a 
                         <span className='destaque2'> Tecnologia</span> que faz piruetas!<span><Donuts /></span></h2>

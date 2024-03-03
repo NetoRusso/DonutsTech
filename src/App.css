@@ -1,23 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-:root {
-  --cor-escura: #5e412f;
-  --cor-clara: #fcebb6;
-  --cor-destaque1: #f07818;
-  --cor-destaque2: #f0a830;
-  --cor-destaque3: #78c0a8;
-  --cor-destaque4: #ff7bac;
-  --fonte-padrao: "Courier Prime", monospace;
-}
+
 
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 
 .App-header {
   background-color: var(--cor-clara);

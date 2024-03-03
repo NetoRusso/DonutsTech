@@ -1,0 +1,93 @@
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 16px;
+}
+
+
+.cabeca {
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+.titulo {
+  color: var(--cor-escura);
+  font-family: var(--fonte-padrao);
+  font-weight: 700;
+  font-size: 16pt;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  width: 90px;
+
+}
+
+.titulo::selection {
+  background-color: var(--cor-escura);
+  color: var(--cor-destaque2);
+}
+
+.card {
+    width: 190px;
+    height: 250px;
+    margin: 16px 32px ;
+    box-shadow: rgba(0, 0, 0, 0.24) -20px 30px 10px;
+    transform-style: preserve-3d;
+    transform: perspective(400px)
+    rotateX(60deg)
+    rotateZ(-30deg);
+    border-radius: 10px;
+    transition: transform 2s;
+    display: flex;
+    align-items: center;
+  }
+
+  .missao {
+    background-image: linear-gradient(to bottom,   var(--cor-destaque1), var(--cor-escura));
+  }
+
+  .visao {
+      background-image: linear-gradient(to bottom,   var(--cor-destaque4),  var(--cor-escura));
+    }
+    
+    .valores {
+      background-image: linear-gradient(to bottom,   var(--cor-destaque3),  var(--cor-escura));
+  }
+  
+  .card:hover {
+    transform: rotateY(19deg);
+  }
+
+
+  .texto {
+    padding: 8px;
+    text-align: center;
+    font-family: var(--fonte-padrao);
+    color: var(--cor-clara);
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .texto::selection {
+    background-color: var(--cor-destaque1);
+  }
+
+  .texto br::selection {
+    background-color: var(--cor-destaque1);
+  }
+
+  .texto_valores {
+    text-align: left;
+    line-height: 2;
+  }
+
+  .cabeca img {
+    width: 90px;
+    height: auto;
+  }
+
+

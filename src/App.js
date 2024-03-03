@@ -1,7 +1,7 @@
-import './reset.css'
 import './App.css';
 import Banner from './Banner';
 import Sobre from './Sobre';
+import Solucoes from './Solucoes';
 
 function App() {
   return (
@@ -9,6 +9,7 @@ function App() {
       <header className="App-header">
       <Banner />
       <Sobre />
+      <Solucoes />
       </header>
     </div>
   );
