@@ -1,5 +1,5 @@
 import './banner.css';
-import logo from './logoDTH.svg';
+//import logo from './logoDTH.svg';
 import Donuts from '../donuts';
 import logoClara from './LogoDtClara.svg';
 
