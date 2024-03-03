@@ -15,6 +15,7 @@ import megaFone from './MegaFone.png';
 function Solucoes() {
     return (
         <div className={style.conteudo}>
+            <div className={style.espaco} />
             <div className={style.titulo}> 
                 <img src={simboloOriginal} alt='Simbolo da donuts' />
                 <h3> 
@@ -22,6 +23,7 @@ function Solucoes() {
                 </h3>
             
             </div>
+            <div className={style.espaco} />
             <div className={style.ajuste}>
                 <p className={style.texto}>
                     Explore o futuro com a Donuts Tech, onde a tecnologia se funde de maneira única com a comunicação. Oferecemos soluções envolventes que superam as expectativas. Desde nossos notáveis desenvolvimentos em software até uma comunicação digital estratégica, cada serviço é uma manifestação de excelência. Criamos experiências visuais inspiradoras, transformando ideias em realidade.<br />Junte-se à revolução digital com a Donuts Tech, onde o futuro se torna presente.
@@ -29,7 +31,7 @@ function Solucoes() {
             </div>
             <div className={style.cabecaTech}>
                 <img className={style.simboloD3} src={simboloDestaque3} alt='Donuts verde' />
-                <h4 className={style.tituloTech}> {`<Tecnologia />`} </h4>
+                <h4 className={style.tituloTech}> {`<Tecnologia />`}<div /></h4>
             </div>
             <div className={style.topicos}>
                 <ul>
@@ -55,6 +57,8 @@ function Solucoes() {
                     />
                 </ul>
             </div>
+
+            <div className={style.espaco} />
 
             <div className={style.cabecaMkt}>
                 <img className={style.simboloD4} src={simboloDestaque4} alt='Donuts rosa' />
@@ -86,7 +90,7 @@ function Solucoes() {
                 </ul>
             </div>
 
-            <div className={style.fim} />
+            <div className={style.espaco} />
         </div>
     )
 }

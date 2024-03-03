@@ -6,8 +6,8 @@
     align-items: center;
 }
 
- .titulo {
-    width: 80%;
+.titulo {
+
     display: flex;
     
 } 
@@ -24,13 +24,18 @@
     color: var(--cor-escura);
 }
 
+.titulo h3::selection {
+    background-color: var(--cor-escura);
+    color: var(--cor-destaque2);
+}
+
 .ajuste {
     display: flex;
     justify-content: center;
 }
 
 .texto {
-    width: 80%;
+    /* width: 80%; */
     padding: 16px;
     font-family: var(--fonte-padrao);
     color:var(--cor-escura);
@@ -51,7 +56,7 @@
 .simboloD3 {
     width: 48px;
     height: auto;
-    animation: pisca 700ms infinite linear ;
+    /* animation: pisca 700ms infinite linear ; */
 
 }
 
@@ -67,6 +72,7 @@
 
 
 .cabecaTech {
+    width: 100%;
     margin-top: 32px;
     display: flex;
     align-items: center;
@@ -79,6 +85,22 @@
     font-size: 1.2em;
     font-weight: 700;
     padding: 0 16px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.tituloTech div {
+    background-color: var(--cor-destaque3);
+    margin-left:4px ;
+    width: 16px;
+    height: 4px;
+    animation: pisca 800ms infinite linear ;
+
+}
+
+.tituloTech::selection {
+    background-color: var(--cor-escura);
+    color: var(--cor-destaque2);
 }
 
 
@@ -90,10 +112,12 @@
 }
 
 .topicos ul {
-    width: 700px;
+    width: 80%;
+    max-width: 700px;
 }
 
 .cabecaMkt {
+    width: 100%;
     margin-top: 32px;
     display: flex;
     align-items: center;
@@ -106,23 +130,46 @@
     font-size: 1.2em;
     font-weight: 700;
     padding: 0 16px;
+    display: flex;
+    align-items: center;
+}
+
+.tituloMkt::selection {
+    background-color: var(--cor-escura);
+    color: var(--cor-destaque2);
 }
 
 .simboloD4 {
     width: 48px;
     height: auto;
-    /* animation: pisca 700ms infinite linear ; */
+    /* animation: pula 700ms infinite linear ; */
 
 }
 
 .tituloMkt span img {
     width: 48px;
     height: auto;
+    margin-left: 8px;
+    animation: pula 700ms infinite linear ;
 }
 
+@keyframes pula {
+    0% {
+      transform: translateY(0);
+    }
+  
+    10% {
+      transform: translateY(-1rem);
+    }
+  
+    20% {
+      transform: translateY(0);
+    }
+  }
 
 
 
-.fim {
+
+.espaco {
     height: 100px;
 }

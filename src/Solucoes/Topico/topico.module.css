@@ -17,3 +17,8 @@
     text-align: left;
     padding: 8px;
 }
+
+.topico p::selection {
+    background-color: var(--cor-destaque1);
+    color: var(--cor-clara);
+}
