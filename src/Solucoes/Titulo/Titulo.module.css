@@ -1,0 +1,51 @@
+.titulo {
+  display: flex;
+  position: relative;
+}
+
+
+.titulo img {
+  width: 120px;
+  height: auto;
+}
+
+.titulo h3 {
+  font-family: var(--fonte-padrao);
+  font-weight: 700;
+  font-size: 1.5em;
+  color: var(--cor-escura);
+}
+
+.titulo h3::selection {
+  background-color: var(--cor-escura);
+  color: var(--cor-destaque2);
+}
+
+/*
+@keyframes teste {
+  from {
+    right: -100vw;
+  }
+  to {
+    right: 0;
+  }
+}
+
+@keyframes rotate {
+  from {
+    rotate: 0deg;
+  }
+  to {
+    rotate: -360deg;
+  }
+}
+
+@keyframes view {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+*/

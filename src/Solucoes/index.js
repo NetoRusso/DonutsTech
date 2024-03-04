@@ -5,24 +5,15 @@ import simboloDestaque1 from './donuts_corDestaque1.svg';
 import simboloDestaque2 from './donuts_corDestaque2.svg';
 import simboloDestaque4 from './donuts_corDestaque4.svg';
 import simboloEscura from './donuts_corEscura.svg';
-import simboloOriginal from './simboloDtOriginal.svg';
 import megaFone from './MegaFone.png';
-
-
-
+import Titulo from './Titulo';
 
 
 function Solucoes() {
     return (
         <div className={style.conteudo}>
             <div className={style.espaco} />
-            <div className={style.titulo}> 
-                <img src={simboloOriginal} alt='Simbolo da donuts' />
-                <h3> 
-                    Nossas soluções, <br/>nosso tempero:
-                </h3>
-            
-            </div>
+            <Titulo />
             <div className={style.espaco} />
             <div className={style.ajuste}>
                 <p className={style.texto}>
