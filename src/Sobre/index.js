@@ -4,6 +4,7 @@ import imgMissao from './simbolo_destaque1.svg';
 import imgVisao from './simbolo_destaque4.svg';
 import imgValores from './simbolo_destaque3.svg';
 import { useEffect, useRef } from 'react';
+import { Element } from 'react-scroll';
 
 
 
@@ -67,7 +68,7 @@ function Sobre() {
 
 
     return (
-        <div className='conteudoTotal'>
+        <Element name='sobre' className='conteudoTotal'>
             <h4 className='titulo'>
                 Junte-se a nós nessa deliciosa jornada, onde a inovação e
                 a excelência se encontram para elevar o potencial do seu negócio!
@@ -109,7 +110,7 @@ function Sobre() {
 
 
             </div>
-        </div>
+        </Element>
 
     );
 }

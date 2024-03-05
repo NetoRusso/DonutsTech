@@ -13,7 +13,6 @@ function Titulo() {
     const handleScroll = () => {
       const { top, bottom, height } = ref.current.getBoundingClientRect();
       const viewHeight = window.innerHeight;
-      
       if ((top) >= 0 && (bottom - 400) <= viewHeight) {
         const ratio = ((viewHeight - (top)) / (height + viewHeight));
         const limite = Math.min(Math.max((ratio + 0.40), 0), 1);
