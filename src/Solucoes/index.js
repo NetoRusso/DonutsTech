@@ -7,10 +7,11 @@ import simboloDestaque4 from "./donuts_corDestaque4.svg";
 import simboloEscura from "./donuts_corEscura.svg";
 import megaFone from "./MegaFone.png";
 import Titulo from "./Titulo";
+import { Element } from "react-scroll";
 
 function Solucoes() {
   return (
-    <div className={style.conteudo}>
+    <Element name="solucoes" className={style.conteudo}>
       <Titulo />
       <div className={style.ajuste}>
         <p className={style.texto}>
@@ -95,7 +96,7 @@ function Solucoes() {
           <Topico imagem={simboloDestaque4} titulo={`Peças gráficas`} />
         </ul>
       </div>
-    </div>
+    </Element>
   );
 }
 
