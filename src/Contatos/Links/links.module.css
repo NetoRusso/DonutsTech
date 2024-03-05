@@ -1,0 +1,6 @@
+.links {
+    width: 260px;
+    height: 280px;
+    border-radius: 2em;
+    box-shadow: 0.4em 1em 0 var(--cor-escura);
+}

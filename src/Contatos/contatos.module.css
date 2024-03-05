@@ -67,14 +67,29 @@
 
 
 
-
-
-
-
-
-
-
-
-.espaco {
-    height: 200px;
+.detalhe {
+    width: 100vw;
+    height: auto;
+    mix-blend-mode: multiply;
 }
+
+@media screen and (max-width: 850px) {
+    .conteudo {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3em;
+    }
+}
+
+/* .rodape {
+    width: 100vw;
+    height: 200px;
+    background-image: url('./malhaPositiva01.svg');
+    mix-blend-mode: multiply;
+} */
+
+
+/* .espaco {
+    height: 200px;
+} */

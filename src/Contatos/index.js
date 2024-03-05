@@ -1,5 +1,7 @@
-import Formulario from './Formulario';
 import style from './contatos.module.css';
+import Formulario from './Formulario';
+import Links from './Links';
+import detalhe from './malhaPositiva01.svg';
 
 function Contatos() {
     return(
@@ -10,8 +12,11 @@ function Contatos() {
             </div>
             <div className={style.conteudo}>
                 <Formulario />
+                <Links />
             </div>
-            <div className={style.espaco} />
+            {/* <div className={style.rodape} /> */}
+            <img className={style.detalhe} src={detalhe} alt='detalhe de malha' />
+            {/* <div className={style.espaco} /> */}
         </section>
     
     )

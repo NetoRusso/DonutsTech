@@ -13,7 +13,7 @@
 }
 
 .titulo h3 {
-  font-family: var(--fonte-padrao);
+  font-family: var(--fonte-titulo);
   font-weight: 700;
   font-size: 1.5em;
   color: var(--cor-escura);

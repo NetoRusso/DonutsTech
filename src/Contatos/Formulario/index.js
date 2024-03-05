@@ -13,7 +13,7 @@ function Formulario() {
                 <input name='e-mail' id='e-mail' type='email' className={style.text} placeholder='E o seu melhor email' />
             </label>
             <label htmlFor='mensagem'>
-                <textarea name='mensagem' id='mensagem' className={style.mensagem} placeholder='Me conte tudo não me esconda nada' />
+                <textarea name='mensagem' id='mensagem' className={style.mensagem} placeholder='Me conte tudo não me esconda nada...' />
             </label>
             <label htmlFor='submit' className={style.labelBotao}>
                 <button name='submit' className={style.botao}>Enviar</button>
