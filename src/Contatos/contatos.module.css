@@ -70,6 +70,8 @@
 
 .detalhe {
     margin-top: -20em;
+    /* object-fit: fill; */
+    pointer-events: none;
     width: 100vw;
     height: auto;
     mix-blend-mode: multiply;
