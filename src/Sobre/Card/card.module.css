@@ -16,7 +16,7 @@
 
 .titulo {
   color: var(--cor-escura);
-  font-family: var(--fonte-padrao);
+  font-family: var(--fonte-titulo);
   font-weight: 700;
   font-size: 16pt;
   display: flex;

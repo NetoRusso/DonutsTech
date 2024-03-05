@@ -1,0 +1,30 @@
+.nav-desk {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: flex;
+}
+
+.active {
+  color: red;
+}
+
+/*
+.teste {
+  animation: teste 1s infinite;
+}
+
+@keyframes teste {
+  0% {
+    transform: translateY(0);
+  }
+
+  10% {
+    transform: translateY(-1rem);
+  }
+
+  20% {
+    transform: translateY(0);
+  }
+}
+*/

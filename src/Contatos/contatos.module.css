@@ -1,0 +1,125 @@
+.contatos {
+    margin-top: 3em;
+    width: 100vw;
+
+}
+
+.cabecaTitulo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.cabecaTitulo h3 {
+    width: 80%;
+    color: var(--cor-escura);
+    font-family: var(--fonte-titulo);
+    font-weight: 800;
+    line-height: 1.3em;
+}
+
+.cabecaTitulo span {
+    width: 280px;
+    color: var(--cor-clara);
+    background-color: var(--cor-escura);
+    font-size: 16px;
+    border-radius: 2em;
+    font-family: var(--fonte-titulo);
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 1em;
+    padding: 0.3em 0.3em;
+    animation: pisca 2s infinite step-end;
+    
+}
+
+.cabecaTitulo h3::selection {
+    background-color: var(--cor-escura);
+    color: var(--cor-destaque2);
+}
+
+@keyframes pisca {
+   
+    0% {
+        color: var(--cor-clara);
+    }
+
+    25% {
+        color: var(--cor-destaque2);
+    }
+
+    50% {
+        color: var(--cor-destaque3);
+    }
+
+    75% {
+        color: var(--cor-destaque4);
+    }
+    
+}
+
+.conteudo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.detalhe {
+    margin-top: -20em;
+    width: 100vw;
+    height: auto;
+    mix-blend-mode: multiply;
+}
+
+.rodape {
+    position: relative;
+}
+
+.copy{
+    width: 100%;
+    /* display: flex; */
+    position: absolute;
+    bottom: 2px;
+    color: var(--cor-escura);
+    font-size: 0.5em;
+    font-weight: 700;
+}
+
+.copy img {
+    width: 1em;
+    height: auto;
+}
+
+
+
+@media screen and (max-width: 850px) {
+    .conteudo {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3em;
+    }
+
+    .detalhe {
+        margin: auto;
+        width: 100vw;
+        height: auto;
+        mix-blend-mode: multiply;
+    }
+}
+
+/* .rodape {
+    width: 100vw;
+    height: 200px;
+    background-image: url('./malhaPositiva01.svg');
+    mix-blend-mode: multiply;
+} */
+
+
+/* .espaco {
+    height: 200px;
+} */
