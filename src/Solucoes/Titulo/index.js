@@ -1,22 +1,46 @@
 import style from "./Titulo.module.css";
 import simboloOriginal from "../simboloDtOriginal.svg";
-import { InView } from "react-intersection-observer";
+import { useEffect, useRef, useState } from "react";
 
 function Titulo() {
+  const ref = useRef(null);
+  const [animacaoRight, setAnimacaoRight] = useState(-100)
+  const [animacaoRotate, setAnimacaoRotate] = useState(-360);
+  const [animacaoOpacity, setAnimacaoOpacity] = useState(0);
+
+  useEffect(() => {
+
+    const handleScroll = () => {
+      const { top, bottom, height } = ref.current.getBoundingClientRect();
+      const viewHeight = window.innerHeight;
+      console.log(top, bottom, viewHeight)
+      if ((top) >= 0 && (bottom - 400) <= viewHeight) {
+        const ratio = ((viewHeight - (top)) / (height + viewHeight));
+        const limite = Math.min(Math.max((ratio + 0.40), 0), 1);
+        setAnimacaoRight(((limite-1)*100))
+        setAnimacaoRotate(((limite)*1080))
+        setAnimacaoOpacity(limite === 1 ? 1 : 0)
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+
+      window.removeEventListener('scroll', handleScroll);
+    }
+  }, []);
+
   return (
-    <InView>
-      {({inView, ref, entry}) => {
-        console.log(inView, entry);
-        (
-        <div ref={ref} className={style.titulo}>
-          <img src={simboloOriginal} alt="Simbolo da donuts" />
-          <h3>
-            Nossas soluções, <br />
-            nosso tempero:
-          </h3>
-        </div>
-      )}}
-    </InView>
+    <>
+      <div ref={ref} className={style.titulo} style={{right: `${animacaoRight}vw`}}>
+        <img src={simboloOriginal} alt="Simbolo da donuts" style={{rotate: `${animacaoRotate}deg`}} />
+        <h3 style={{opacity: `${animacaoOpacity}`}}>
+          Nossas soluções, <br />
+          nosso tempero:
+        </h3>
+      </div>
+    </>
   );
 }
 

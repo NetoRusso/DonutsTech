@@ -1,12 +1,15 @@
 .titulo {
   display: flex;
   position: relative;
+  transition: all 1s;
+  margin-bottom: 2em;
 }
 
 
 .titulo img {
   width: 120px;
   height: auto;
+  transition: all 1s;
 }
 
 .titulo h3 {
@@ -14,6 +17,7 @@
   font-weight: 700;
   font-size: 1.5em;
   color: var(--cor-escura);
+  transition: all 1s;
 }
 
 .titulo h3::selection {
@@ -21,7 +25,7 @@
   color: var(--cor-destaque2);
 }
 
-/*
+
 @keyframes teste {
   from {
     right: -100vw;
@@ -33,7 +37,7 @@
 
 @keyframes rotate {
   from {
-    rotate: 0deg;
+    rotate: 360deg;
   }
   to {
     rotate: -360deg;
@@ -48,4 +52,4 @@
     opacity: 1;
   }
 }
-*/
+

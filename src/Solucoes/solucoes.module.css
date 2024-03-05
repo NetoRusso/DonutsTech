@@ -1,175 +1,153 @@
 .conteudo {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.titulo {
-
-    display: flex;
-    
-} 
-
-.titulo img {
-    width: 120px;
-    height: auto;
-}
-
-.titulo h3 {
-    font-family: var(--fonte-padrao);
-    font-weight: 700;
-    font-size: 1.5em;
-    color: var(--cor-escura);
-}
-
-.titulo h3::selection {
-    background-color: var(--cor-escura);
-    color: var(--cor-destaque2);
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .ajuste {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .texto {
-    /* width: 80%; */
-    padding: 16px;
-    font-family: var(--fonte-padrao);
-    color:var(--cor-escura);
-    font-size: 1em;
-    text-align: center;
-    display: flex;
+  /* width: 80%; */
+  padding: 16px;
+  font-family: var(--fonte-padrao);
+  color: var(--cor-escura);
+  font-size: 1em;
+  text-align: center;
+  display: flex;
 }
 
 .texto::selection {
-    background-color: var(--cor-destaque1);
-    color: var(--cor-clara);
+  background-color: var(--cor-destaque1);
+  color: var(--cor-clara);
 }
 
 .texto br::selection {
-    background-color: var(--cor-destaque1);
+  background-color: var(--cor-destaque1);
 }
 
 .simboloD3 {
-    width: 48px;
-    height: auto;
-    /* animation: pisca 700ms infinite linear ; */
+  width: 48px;
+  height: auto;
+  /* animation: pisca 700ms infinite linear ; */
 
 }
 
 @keyframes pisca {
-    from{
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 
 
 .cabecaTech {
-    width: 100%;
-    margin-top: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+  width: 100%;
+  margin-top: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .tituloTech {
-    color: var(--cor-destaque3);
-    font-family: var(--fonte-padrao);
-    font-size: 1.2em;
-    font-weight: 700;
-    padding: 0 16px;
-    display: flex;
-    align-items: flex-end;
+  color: var(--cor-destaque3);
+  font-family: var(--fonte-padrao);
+  font-size: 1.2em;
+  font-weight: 700;
+  padding: 0 16px;
+  display: flex;
+  align-items: flex-end;
 }
 
 .tituloTech div {
-    background-color: var(--cor-destaque3);
-    margin-left:4px ;
-    width: 16px;
-    height: 4px;
-    animation: pisca 800ms infinite linear ;
+  background-color: var(--cor-destaque3);
+  margin-left: 4px;
+  width: 16px;
+  height: 4px;
+  animation: pisca 800ms infinite linear;
 
 }
 
 .tituloTech::selection {
-    background-color: var(--cor-escura);
-    color: var(--cor-destaque2);
+  background-color: var(--cor-escura);
+  color: var(--cor-destaque2);
 }
 
 
 .topicos {
-    width: 100%;
-    padding: 16px;
-    display: flex;
-    justify-content: center;
+  width: 100%;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
 }
 
 .topicos ul {
-    width: 80%;
-    max-width: 700px;
+  width: 80%;
+  max-width: 700px;
 }
 
 .cabecaMkt {
-    width: 100%;
-    margin-top: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+  width: 100%;
+  margin-top: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .tituloMkt {
-    color: var(--cor-destaque4);
-    font-family: var(--fonte-padrao);
-    font-size: 1.2em;
-    font-weight: 700;
-    padding: 0 16px;
-    display: flex;
-    align-items: center;
+  color: var(--cor-destaque4);
+  font-family: var(--fonte-padrao);
+  font-size: 1.2em;
+  font-weight: 700;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
 }
 
 .tituloMkt::selection {
-    background-color: var(--cor-escura);
-    color: var(--cor-destaque2);
+  background-color: var(--cor-escura);
+  color: var(--cor-destaque2);
 }
 
 .simboloD4 {
-    width: 48px;
-    height: auto;
-    /* animation: pula 700ms infinite linear ; */
+  width: 48px;
+  height: auto;
+  /* animation: pula 700ms infinite linear ; */
 
 }
 
 .tituloMkt span img {
-    width: 48px;
-    height: auto;
-    margin-left: 8px;
-    animation: pula 700ms infinite linear ;
+  width: 48px;
+  height: auto;
+  margin-left: 8px;
+  animation: pula 700ms infinite linear;
 }
 
 @keyframes pula {
-    0% {
-      transform: translateY(0);
-    }
-  
-    10% {
-      transform: translateY(-1rem);
-    }
-  
-    20% {
-      transform: translateY(0);
-    }
+  0% {
+    transform: translateY(0);
   }
+
+  10% {
+    transform: translateY(-1rem);
+  }
+
+  20% {
+    transform: translateY(0);
+  }
+}
 
 
 
 
 .espaco {
-    height: 100px;
+  height: 100px;
 }
