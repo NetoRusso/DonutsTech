@@ -1,5 +1,5 @@
 import './banner.css';
-//import logo from './logoDTH.svg';
+import logo from './logoDTH.svg';
 import Donuts from '../donuts';
 import logoClara from './LogoDtClara.svg';
 
@@ -7,6 +7,9 @@ function Banner() {
     return(
         <div className='banner'>
             <div className='containner' />
+            <div className='elementos'> 
+                
+            </div>
             <div className='conteudo'>
                 <div>
                 <img className='logo' src={logoClara} alt='logo da donuts tech' />

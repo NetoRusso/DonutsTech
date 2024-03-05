@@ -11,7 +11,7 @@
     width: 80%;
     height: auto;
     color: var(--cor-escura);
-    font-family: var(--fonte-padrao);
+    font-family: var(--fonte-titulo);
     font-weight: 700;
     font-size: 1.5em;
 }
@@ -39,6 +39,32 @@
     justify-content: space-around;
     margin-top: 32px ;
 }
+
+.hidden {
+    opacity: 0;
+    filter: blur(15px);
+    transform: translatex(-100%);
+    transition: all 2s;
+    animation: ease-in-out;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translatex(0);
+    transition: all 2s;
+    animation: ease-in-out;
+}
+
+.cards :nth-child(2) {
+    transition-delay: 500ms;
+}
+
+.cards :nth-child(3) {
+    transition-delay: 1000ms;
+}
+
+
 
 @media screen and (max-width: 850px) {
     .cards {

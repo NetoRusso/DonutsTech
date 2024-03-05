@@ -99,6 +99,7 @@
 }
 
 .tituloTech::selection {
+    font-family: var(--fonte-titulo);
     background-color: var(--cor-escura);
     color: var(--cor-destaque2);
 }
@@ -126,7 +127,7 @@
 
 .tituloMkt {
     color: var(--cor-destaque4);
-    font-family: var(--fonte-padrao);
+    font-family: var(--fonte-titulo);
     font-size: 1.2em;
     font-weight: 700;
     padding: 0 16px;
@@ -135,6 +136,7 @@
 }
 
 .tituloMkt::selection {
+    font-family: var(--fonte-padrao);
     background-color: var(--cor-escura);
     color: var(--cor-destaque2);
 }
