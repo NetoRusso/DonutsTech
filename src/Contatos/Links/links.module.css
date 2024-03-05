@@ -1,6 +1,96 @@
 .links {
-    width: 260px;
-    height: 280px;
+  width: 380px;
+  height: 550px;
+  border-radius: 2em;
+  box-shadow: 0.4em 1em 0 var(--cor-escura);
+}
+
+.redes {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 2em;
+  margin-top: 2.5em;
+  gap: 1em;
+}
+
+.redes a div {
+  width: 50px;
+  height: 50px;
+}
+
+.redes a div:hover {
+    background-color: var(--cor-escura);
+}
+
+
+.redes h5 {
+  font-size: 16px;
+  font-family: var(--fonte-titulo);
+  font-weight: 700;
+  color: var(--cor-escura);
+  margin-left: 1em;
+}
+
+.redes div {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.youtube {
+  background-color: var(--cor-destaque4);
+  mask-image: url('./youtube.svg');
+}
+
+.instagram {
+  background-color: var(--cor-destaque2);
+  mask-image: url("./instagram.svg");
+}
+
+.linkedin {
+  background-color: var(--cor-destaque3);
+  mask-image: url('./linkedin.svg');
+}
+
+.behance {
+  background-color: var(--cor-destaque1);
+  mask-image: url('./behance.svg');
+}
+
+.email {
+  background-color: var(--cor-destaque4);
+  mask-image: url('./email.svg');
+}
+
+.whatsapp {
+  background-color: var(--cor-destaque3);
+  mask-image: url('./whatsapp.svg');
+}
+
+@media screen and (max-width: 850px) {
+  .links {
+    margin-top: 2em;
+    width: 300px;
+    height: 400px;
     border-radius: 2em;
     box-shadow: 0.4em 1em 0 var(--cor-escura);
+  }
+
+  .redes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 2em;
+    margin-top: 2em;
+    gap: 0.5em;
+  }
+
+  .redes h5 {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--cor-escura);
+    margin-left: 0.4em;
+  }
+  
 }
