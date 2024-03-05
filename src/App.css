@@ -2,6 +2,7 @@
 
 .App {
   text-align: center;
+  overflow-x: hidden ;
 }
 
 .App-header {
@@ -13,6 +14,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  overflow-x: hidden ;
 }
 
 
