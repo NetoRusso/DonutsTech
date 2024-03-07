@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 :root {
   --cor-escura: #5e412f;
@@ -9,6 +9,8 @@
   --cor-destaque4: #ff7bac;
   --fonte-padrao: "Courier Prime", monospace;
   --fonte-titulo: "Rubik", sans-serif;
+  --fonte-divertida: "Acme", sans-serif;
+  --cursor-teste: url('./Contatos/Esmague/cursor_martelo.cur');
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/

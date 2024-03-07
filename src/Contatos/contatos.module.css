@@ -1,6 +1,8 @@
 .contatos {
     margin-top: 3em;
     width: 100vw;
+    overflow-x: hidden;
+    height: auto;
 
 }
 
@@ -66,6 +68,13 @@
     align-items: center;
 }
 
+.ajuste {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 15vw;
+}
+
 
 
 .detalhe {
@@ -85,7 +94,7 @@
     width: 100%;
     /* display: flex; */
     position: absolute;
-    bottom: 2px;
+    bottom: 5px;
     color: var(--cor-escura);
     font-size: 0.5em;
     font-weight: 700;
@@ -104,6 +113,12 @@
         justify-content: center;
         align-items: center;
         gap: 3em;
+    }
+
+    .ajuste {
+        flex-direction: column-reverse;
+        gap: 0;
+
     }
 
     .detalhe {
