@@ -1,6 +1,6 @@
 .links {
-  width: 380px;
-  height: 550px;
+  width: 290px;
+  height: 600px;
   border-radius: 2em;
   box-shadow: 0.4em 1em 0 var(--cor-escura);
 }
@@ -9,7 +9,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-left: 2em;
+  /* margin-right: em; */
   margin-top: 2.5em;
   gap: 1em;
 }
@@ -21,15 +21,16 @@
 
 .redes a div:hover {
     background-color: var(--cor-escura);
+    scale: 0.8;
 }
 
 
 .redes h5 {
-  font-size: 16px;
+  font-size: 0.52em;
   font-family: var(--fonte-titulo);
   font-weight: 700;
   color: var(--cor-escura);
-  margin-left: 1em;
+  margin-left: 0.8em;
 }
 
 .redes div {

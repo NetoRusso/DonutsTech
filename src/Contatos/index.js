@@ -1,9 +1,10 @@
 import { Element } from 'react-scroll';
-// import Formulario from './Formulario';
+import Formulario from './Formulario';
 import style from './contatos.module.css';
 import Links from './Links';
 import detalhe from './malhaPositiva01.svg';
 import simbolo from './simbolo_DT_completo_original.svg';
+import Esmague from './Esmague';
 
 function Contatos() {
     return(
@@ -13,8 +14,11 @@ function Contatos() {
                 <h3>vamos tornar sua marca ainda mais irresistível para o mercado!</h3>
             </div>
             <div className={style.conteudo}>
-                {/* <Formulario /> */}
+                <Formulario />
+                <div className={style.ajuste}>
+                <Esmague />
                 <Links />
+                </div>
             </div>
 
             <div className={style.rodape}>
