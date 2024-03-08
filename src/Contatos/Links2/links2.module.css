@@ -1,0 +1,88 @@
+.links {
+    max-width: 360px;
+    margin: 0 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.redes {
+    display: flex;
+    margin: 8px;
+    flex-wrap: wrap;
+}
+
+.redes a div {
+    width: 40px;
+    height: 40px;
+    margin: 4px;
+}
+
+.redes a div:hover {
+    scale: 0.8;
+    background-color: var(--cor-escura);
+}
+
+.instagram {
+    background-color: var(--cor-destaque4);
+    mask-image: url('./instagram.svg');
+}
+
+.linkedin {
+    background-color: var(--cor-destaque3);
+    mask-image: url('./linkedin.svg');
+}
+
+.behance {
+    background-color: var(--cor-destaque1);
+    mask-image: url('./behance.svg');
+}
+
+.youtube {
+    background-color: var(--cor-destaque2);
+    mask-image: url('./youtube.svg') ;
+}
+
+.contatos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contatos div {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin: 8px;
+    }
+
+
+.emailTitulo {
+    font-family: var(--fonte-titulo);
+    color: var(--cor-escura);
+    font-size: 1em;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.email {
+    width: 48px;
+    height: 48px;
+    background-color: var(--cor-destaque1);
+    mask-image: url('./email.svg');
+}
+
+.wppTitulo {
+    font-family: var(--fonte-titulo);
+    color: var(--cor-escura);
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+.wpp {
+    width: 48px;
+    height: 48px;
+    background-color: var(--cor-destaque3);
+    mask-image: url('./whatsapp.svg');
+}
+

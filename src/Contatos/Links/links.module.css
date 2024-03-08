@@ -1,16 +1,16 @@
 .links {
-  width: 290px;
-  height: 600px;
+  width: 230px;
+  height: auto;
+  margin: 2em;
+  padding: 1em;
   border-radius: 2em;
-  box-shadow: 0.4em 1em 0 var(--cor-escura);
+  box-shadow: -0.4em 1em 0 var(--cor-escura);
 }
 
 .redes {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  /* margin-right: em; */
-  margin-top: 2.5em;
   gap: 1em;
 }
 
@@ -26,11 +26,10 @@
 
 
 .redes h5 {
-  font-size: 0.52em;
+  font-size: 0.5em;
   font-family: var(--fonte-titulo);
   font-weight: 700;
   color: var(--cor-escura);
-  margin-left: 0.8em;
 }
 
 .redes div {
@@ -72,10 +71,9 @@
 @media screen and (max-width: 850px) {
   .links {
     margin-top: 2em;
-    width: 300px;
-    height: 400px;
+    width: 250px;
+    height: auto;
     border-radius: 2em;
-    box-shadow: 0.4em 1em 0 var(--cor-escura);
   }
 
   .redes {

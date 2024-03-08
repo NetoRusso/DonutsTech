@@ -1,4 +1,5 @@
 import { useCallback, useEffect } from 'react';
+import { useSound } from 'use-sound';
 import style from './esmague.module.css';
 import { useState } from 'react';
 import mask1 from './mask1.svg';
@@ -7,9 +8,10 @@ import mask3 from './mask3.svg';
 import mask4 from './mask4.svg';
 import mask5 from './mask5.svg';
 import quebrar from './quebrou.mp3';
-import quebrou from './quebrou3.ogg';
+import acabar from './quebrou3.ogg';
 import bater from './batendo2.mp3'
 import simboloDt from './simbolo_DT_completo_original.svg';
+import classNames from 'classnames';
 
 
 
@@ -30,9 +32,10 @@ function Esmague() {
 
 
     const cores = ['--cor-escura', '--cor-destaque1', '--cor-destaque3', '--cor-destaque2', '--cor-destaque4']
-    const quebra = new Audio(quebrar)
-    const acabou = new Audio(quebrou)
-    const bate = new Audio(bater)
+
+    const [hitSomPlay, {hitSomStop}] =useSound(bater);
+    const [crashSomPlay, {crashSomStop}] =useSound(quebrar);
+    const [endSomPlay, {endSomStop}] =useSound(acabar);
 
 
 
@@ -45,7 +48,7 @@ function Esmague() {
         setPe3(`${style.n3}`);
         setTxt(`${style.textoN}`);
         setBtn(`${style.reiniciarN}`);
-        gerarNumeroAleatorio();
+        setNumeroSecreto(gerarNumeroAleatorio());
     }
 
     function imprimeResultado() {
@@ -62,22 +65,19 @@ function Esmague() {
     }, [])
     const menorValor = 10;
     const maiorValor = 100;
-    // const numeroSecreto = gerarNumeroAleatorio();
 
     function gerarNumeroAleatorio() {
         return parseInt(Math.random() * (menorValor - maiorValor - 1) + (maiorValor + 1));
     };
-    console.log('o número secreto é :', numeroSecreto, clicks);
 
     function mudarDonuts(clicou, secreto) {
         const meta = clicou / secreto;
         const corNumero = sorteiaCor()
-        console.log(meta, clicou, secreto)
 
         if (meta >= 0.25 && meta < 0.5 && etapa === 1) {
             setMask(`${mask2}`)
             setCor(cores[corNumero])
-            quebra.play()
+            crashSomPlay()
             setPe2(`${style.s2}`)
             setEtapa(2)
 
@@ -85,21 +85,21 @@ function Esmague() {
         if (meta >= 0.5 && meta < 0.75 && etapa === 2) {
             setMask(`${mask3}`)
             setCor(cores[corNumero])
-            quebra.play()
+            crashSomPlay()
             setPe2(`${style.s1}`)
             setEtapa(3)
         }
         if (meta >= 0.75 && meta < 1 && etapa === 3) {
             setMask(`${mask4}`)
             setCor(cores[corNumero])
-            quebra.play()
+            crashSomPlay()
             setPe2(`${style.s3}`)
             setEtapa(4)
         }
         if (meta === 1 && etapa === 4) {
             setMask(`${mask5}`)
             setCor(cores[corNumero])
-            acabou.play()
+            endSomPlay()
             imprimeResultado()
             setTxt(`${style.textoWin}`)
             setBtn(`${style.reiniciarWin}`);
@@ -113,31 +113,25 @@ function Esmague() {
 
 
             <h2 className={`${txt}` } >Você esmagou esse donuts!<br/> foram <span id='aquiNumero'> </span> porradas</h2>
-            <div className={style.jogo}
+            <div className={classNames({[style.jogo]:true, [style.active]: etapa <= 4})}
                 id='jogo'
+               
 
                 onClick={() => {
                     const clicou = clicks + 1
                     if ((clicou) <= numeroSecreto) {
                         mudarDonuts(clicou, numeroSecreto);
-                        bate.play()
+                        hitSomPlay()
                         setClicks(clicou)
                     }}}
-            
             >
+                
                 <div className={style.donut} style={{
                     backgroundColor: `var(${cor})`,
                     maskImage: `url(${mask})`
 
                 }} 
-                    // onClick={() => {
-                    // const clicou = clicks + 1
-                    // if ((clicou) <= numeroSecreto) {
-                    //     mudarDonuts(clicou, numeroSecreto);
-                    //     bate.play()
-                    //     setClicks(clicou)
-                    // }}}
-                     />
+                    />
 
                 
                 <div className={style.ajuste}>
@@ -148,7 +142,7 @@ function Esmague() {
 
             </div>
 
-            <button className={`${btn}`} onClick={ () => reseta()} >mais um Donuts<img src={simboloDt} alt='simbolo da logo da Donuts Tech' /></button>
+            <button className={`${btn}`} onClick={ () => reseta()} >Mais um Donuts<img src={simboloDt} alt='simbolo da logo da Donuts Tech' /></button>
         </section>
     )
 

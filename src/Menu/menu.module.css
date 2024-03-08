@@ -1,13 +1,54 @@
 .nav-desk {
   position: fixed;
+  margin-top: 0.5em;
   top: 0;
   z-index: 1;
   display: flex;
+  gap: 0.5em;
 }
 
-.active {
-  color: red;
+
+
+.nav-desk ul li {
+  font-family: var(--fonte-titulo);
+  color: var(--cor-destaque2);
+  font-size: 0.6em;
+  font-weight: 700;
+  padding: 0.2em 0.2em;
+  /* text-shadow: 0.1em 0.1em 0em var(--cor-clara); */
+  
 }
+
+.nav-desk ul li:hover {
+  cursor: pointer;
+}
+
+/* .nav-desk ul li:hover {
+  cursor: pointer;
+  color: var(--cor-destaque1);
+  text-shadow: none;
+  background-color: var(--cor-clara);
+  border: solid 0.2em var(--cor-destaque1);
+  padding: 0.2em 0.2em;
+  border-radius: 2em;
+} */
+
+.active {
+  cursor: pointer;
+  color: var(--cor-clara);
+  background-color: var(--cor-destaque1);
+  border: solid 0.2em var(--cor-destaque1);
+  padding: 0.2em 0.2em;
+  border-radius: 2em;
+}
+
+/* .active:hover{
+  cursor: pointer;
+  color: var(--cor-clara);
+  background-color: var(--cor-destaque1);
+  padding: 0.2em 0.2em;
+  border-radius: 2em;
+} */
 
 /*
 .teste {
