@@ -7,26 +7,27 @@ function Menu() {
   const mobile = useMediaQuery({ maxWidth: 850 });
   const scrollY = Events.scrollEvent.register();
 
-  console.log(scrollY);
-
   return (
     <>
       {mobile ? (
-        <Element
-          onSroll={(e) => {
-            console.log(`Scroll vertical: ${e.target.scrollTop}`);
-            console.log(`Scroll horizontal: ${e.target.scrollLeft}`);
+       <>
+       
+       </> 
+       // <Element
+       //   onSroll={(e) => {
+       //     console.log(`Scroll vertical: ${e.target.scrollTop}`);
+       //     console.log(`Scroll horizontal: ${e.target.scrollLeft}`);
 
-            if (e.deltaY > 0) {
-              console.log("Scroll para baixo");
-            } else if (e.deltaY < 0) {
-              console.log("Scroll para cima");
-            }
-          }}
-        >
-          <img className={style.teste} src={logo} alt="" />
-          <p>{scrollY}</p>
-        </Element>
+       //     if (e.deltaY > 0) {
+       //       console.log("Scroll para baixo");
+       //     } else if (e.deltaY < 0) {
+       //       console.log("Scroll para cima");
+       //     }
+       //   }}
+       // >
+       //   <img className={style.teste} src={logo} alt="" />
+       //   <p>{scrollY}</p>
+       // </Element>
       ) : (
         <>
           <nav className={style["nav-desk"]}>

@@ -66,20 +66,22 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin: 16px;
+    padding: 16px;
 }
 
 .ajuste {
+    height: 100%;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    gap: 15vw;
 }
 
 
 
 .detalhe {
     margin-top: -20em;
-    /* object-fit: fill; */
     pointer-events: none;
     width: 100vw;
     height: auto;
@@ -112,13 +114,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 3em;
     }
 
     .ajuste {
-        flex-direction: column-reverse;
-        gap: 0;
-
+        flex-direction: column;
     }
 
     .detalhe {
@@ -128,15 +127,3 @@
         mix-blend-mode: multiply;
     }
 }
-
-/* .rodape {
-    width: 100vw;
-    height: 200px;
-    background-image: url('./malhaPositiva01.svg');
-    mix-blend-mode: multiply;
-} */
-
-
-/* .espaco {
-    height: 200px;
-} */

@@ -41,7 +41,7 @@
     rotateX(60deg)
     rotateZ(-30deg);
     border-radius: 10px;
-    transition: transform 2s;
+    transition: transform 1000ms;
     display: flex;
     align-items: center;
   }
