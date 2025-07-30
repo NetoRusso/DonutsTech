@@ -17,7 +17,7 @@ const Linktree = () => {
     <div className="linktree-section">
       <div className="container">
         <div className="header">
-          <a href="https://www.donutstech.com.br/">
+          <a href="https://www.donutstech.com.br/" alt="Link para o site Donuts Tech" target="__blank">
             <img src={logo} alt="Logo" />
           </a>
         </div>
@@ -26,7 +26,7 @@ const Linktree = () => {
           <h3>Explore o universo Donuts Tech.</h3>
         </div>
         <div className="links">
-          <a href="#" className="link">
+          <a href="https://wa.me/5534992138816" target="__blank" className="link" alt="Link para entrar em contato com a equipe via WhatsApp">
             <div className="icon">
               <img src={Whatsapp} width={28} height={28} />
             </div>
@@ -35,7 +35,7 @@ const Linktree = () => {
             </div>
           </a>
 
-          <a href="#" className="link">
+          <a href="https://www.instagram.com/donuts.tech/" className="link" alt="Link para o Instagram da empresa Donuts Tech" target="__blank">
             <div className="icon">
               <img src={Instagram} width={28} height={28} />
             </div>
@@ -44,7 +44,7 @@ const Linktree = () => {
             </div>
           </a>
 
-          <a href="#" className="link">
+          <a href="https://www.linkedin.com/company/donutstech/" target="__blank" className="link" alt="Link para o Linkedin da empresa Donuts Tech">
             <div className="icon">
               <img src={Linkedin} width={28} height={28} />
             </div>
@@ -63,21 +63,21 @@ const Linktree = () => {
         </div>
         <div className="team">
           <div className="profile">
-            <a href="#">
+            <a href="https://wa.me/5534992138816" target="__blank" alt="Link para entrar em contato com Neto via WhatsApp">
               <img src={Neto} alt="Neto" width={52} height={52} />
             </a>
             <span>Neto</span>
           </div>
 
           <div className="profile">
-            <a href="#">
+            <a href="https://wa.me/5511952192009" target="__blank" alt="Link para entrar em contato com Milena via WhatsApp">
               <img src={Milena} alt="Milena" width={56} height={56} />
             </a>
             <span>Milena</span>
           </div>
 
           <div className="profile">
-            <a href="#">
+            <a href="https://wa.me/5534992981863" target="__blank" alt="Link para entrar em contato com Pedro via WhatsApp">
               <img src={Pedro} alt="Pedro" width={56} height={56} />
             </a>
             <span>Pedro</span>
@@ -86,7 +86,7 @@ const Linktree = () => {
         <div className="associados">
           <h3>Associados</h3>
           <div className="associados-list">
-              <a href="#">
+              <a href="https://wa.me/5511912681826" target="__blank" alt="Link para entrar em contato com Thiago via WhatsApp">
             <div className="associados-item">
                 <img src={Thiago} alt="" width={56} height={56} />
                 <span>
@@ -95,7 +95,7 @@ const Linktree = () => {
                 </span>
             </div>
               </a>
-            <a href="#">
+            <a href="https://wa.me/5534992656418" target="__blank" alt="Link para entrar em contato com Junio via WhatsApp">
               <div className="associados-item">
                 <img src={Junio} alt="" width={56} height={56} />
                 <span>
