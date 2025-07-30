@@ -2,8 +2,8 @@ import "./linktree.css";
 
 //import fotos
 import logo from "./logoDTH.svg";
-import Neto from "./Neto.jpeg";
-import Milena from "./Milena.jpeg";
+import Neto from "./Neto.jpg";
+import Milena from "./Milena.jpg";
 import Pedro from "./Pedro.jpg";
 import Thiago from "./Thiago.jpg";
 import Junio from "./Junio.jpg";
