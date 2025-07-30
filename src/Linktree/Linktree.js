@@ -6,11 +6,11 @@ import Neto from "./Neto.jpeg";
 import Milena from "./Milena.jpeg";
 import Pedro from "./Pedro.jpg";
 import Thiago from "./Thiago.jpg";
+import Junio from "./Junio.jpg";
 import Whatsapp from "./whatsapp.png";
 import Instagram from "./insta.png";
 import Linkedin from "./linkedin.png";
 // import Computador from './computador.png';
-import Junio from "./Junio.jpg";
 
 const Linktree = () => {
   return (
