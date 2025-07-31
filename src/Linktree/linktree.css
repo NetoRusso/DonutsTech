@@ -6,11 +6,12 @@ body {
 }
 
 .linktree-section {
-  background: linear-gradient(
+  /* background: linear-gradient(
     to bottom,
     var(--cor-clara) 0%,
     var(--cor-destaque2) 100%
-  );
+  ); */
+  background-color: var(--cor-clara);
   width: 100vw;
   height: 100vh;
   max-height: 100vh;
@@ -84,7 +85,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 24px;
-    margin-top: 24px;
+  margin-top: 24px;
 }
 
 .link {
