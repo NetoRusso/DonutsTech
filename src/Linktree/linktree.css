@@ -6,11 +6,6 @@ body {
 }
 
 .linktree-section {
-  /* background: linear-gradient(
-    to bottom,
-    var(--cor-clara) 0%,
-    var(--cor-destaque2) 100%
-  ); */
   background-color: var(--cor-clara);
   width: 100vw;
   height: 100vh;
@@ -156,6 +151,13 @@ body {
   border-radius: 50%;
   object-fit: cover;
   overflow: hidden;
+  border: 3px solid var(--cor-escura);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.774);
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    box-shadow: none;
+  }
 }
 
 .associados {
@@ -203,6 +205,13 @@ body {
   border-radius: 50%;
   object-fit: cover;
   overflow: hidden;
+  border: 3px solid var(--cor-escura);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.774);
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    box-shadow: none;
+  }
 }
 
 .associados-item span {
