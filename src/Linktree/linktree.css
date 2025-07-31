@@ -44,7 +44,7 @@ body {
   margin: 0 auto 0 -8px;
   transition: transform 0.3s ease-in-out;
 
-  &:hover{
+  &:hover {
     transform: scale(0.95);
   }
 }
@@ -60,22 +60,22 @@ body {
 
 .titles h2 {
   font-size: 32px;
-  color: var(--cor-destaque1);
+  color: var(--cor-escura);
   font-family: var(--fonte-titulo);
   font-weight: 700;
   margin: 0;
   text-align: center;
-  text-shadow: 0 0 3px rgb(255, 145, 105);
+  /* text-shadow: 0 0 3px rgb(255, 145, 105); */
 }
 
 .titles h3 {
   font-size: 20px;
   font-weight: 400;
-  color: var(--cor-destaque3);
+  color: var(--cor-escura);
   font-family: var(--fonte-titulo);
   font-weight: 600;
   margin: 0;
-    text-shadow: 0 0 3px rgba(105, 240, 255, 0.722);
+  /* text-shadow: 0 0 3px rgba(105, 240, 255, 0.722); */
 }
 
 .links {
