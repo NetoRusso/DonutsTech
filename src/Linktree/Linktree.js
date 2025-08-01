@@ -10,7 +10,6 @@ import Junio from "./Junio.jpg";
 import Whatsapp from "./whatsapp.png";
 import Instagram from "./insta.png";
 import Linkedin from "./linkedin.png";
-// import Computador from './computador.png';
 
 const Linktree = () => {
   return (
@@ -52,14 +51,6 @@ const Linktree = () => {
               <h3>Linkedin</h3>
             </div>
           </a>
-          {/* <a href="#" className="link">
-            <div className="icon">
-              <img src={Computador} width={28} height={28} />
-            </div>
-            <div className="texto">
-              <h3>Portfólio</h3>
-            </div>
-          </a> */}
         </div>
         <div className="team">
           <div className="profile">
